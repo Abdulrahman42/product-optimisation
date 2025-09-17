@@ -53,13 +53,15 @@ export default function ProductList({
         </div>
       </div>
 
-      <div className="grid grid-cols-1 grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 gap-4">
         {filterProducts.length === 0 ? (
           <p className="text-black text-center text-xl w-full">
             No Product for category {category}
           </p>
         ) : (
-          filterProducts.map((item) => <ProductCard key={item.id} product={item} />)
+          filterProducts.map((item) => (
+            <ProductCard key={item.id} product={item} />
+          ))
         )}
       </div>
     </div>

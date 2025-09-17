@@ -17,7 +17,7 @@ export default function ProductCard({ product }: { product: ProductType }) {
           fill
           style={{ objectFit: "cover" }}
           sizes="(max-width: 768px) 100vw, 33vw"
-          priority={false}
+          priority={true}
         />
       </div>
       <div className="p-3">
